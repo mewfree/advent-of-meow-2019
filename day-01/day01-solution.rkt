@@ -3,7 +3,7 @@
 ; shared
 (define lines
   (map string->number
-       (file->lines "input")))
+    (file->lines "input")))
 
 (define (fuel-calc module-mass)
   (- (quotient module-mass 3) 2))
